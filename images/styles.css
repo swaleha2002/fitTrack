@@ -1,0 +1,303 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width:40px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content:flex-start;
+    
+  }
+  
+  nav li {
+    margin-left: 30px;
+ 
+  }
+  nav li :hover{
+    background-color: #ff9400;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 5px;
+  }
+  
+  /* Hero Section Styles */
+  
+  #hero {
+    background-color: #f1f1f1;
+    padding: 100px 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  #hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff9400;
+  }
+  
+  /* Workouts Section Styles */
+  
+  #workouts {
+    padding: 80px 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  #workouts h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .workout-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+  }
+  
+  .workout-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Experts Section Styles */
+  
+  #experts {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  #experts h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .expert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+  }
+  
+  .expert-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Section Styles */
+  
+  #contact {
+    background-color: #f1f1f1;
+    padding: 80px 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  #contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #ff9400;
+  }
+/* App Download Section Styles */
+
+#app-download {
+    background-color: #f1f1f1;
+    padding: 80px 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  #app-download h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .app-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .app-buttons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .app-buttons img {
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .app-buttons .cta-button {
+    display: inline-block;
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .app-buttons .cta-button:hover {
+    background-color: #ff9400;
+  }
+  
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color:#ff9400 ;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-links img {
+    width: 30px;
+    margin-left: 10px;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .logo img {
+      max-width: 80px;
+    }
+  
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    nav li {
+      margin: 0 10px;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    #hero h1 {
+      font-size: 28px;
+    }
+  
+    #hero p {
+      font-size: 16px;
+    }
+  
+    .workout-grid,
+    .expert-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
